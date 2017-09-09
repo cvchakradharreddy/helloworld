@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+    <head>
+    
+        <!--  basic meta information -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Type" content="application/json; charset=utf-8">
+        <meta content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes" name="viewport">
+
+        <title>My AR World</title>
+
+        <!-- <script src="https://www.wikitude.com/libs/architect.js"></script> -->
+        <script src="js/architect.js"></script>
+        <script src="js/ade.js"></script>
+
+        <!-- jquery mobile CSS -->
+        <link rel="stylesheet" href="../../www/jquery/jquery.mobile-1.3.2.min.css" />
+       <!--- <link rel="stylesheet" href="jquery/theme-classic-1.4.0.css"/> -->
+        <!-- required to set background transparent & enable "click through" -->
+        <link rel="stylesheet" href="../../www/jquery/jquery-mobile-transparent-ui-overlay.css" /> 
+        
+
+        <!-- jquery JS files -->
+        <script type="text/javascript" src="../../www/jquery/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../../www/jquery/jquery.mobile-1.3.2.min.js"></script>
+
+        <link rel="stylesheet" href="css/main.css"/>
+        
+        <!-- Swagger REST Client -->
+        <script type="text/javascript" src="../../www/js/swagger-client.min.js"></script>
+        <script type="text/javascript" src="../../www/js/couchbase-lite.js"></script>
+        
+        <!-- global constants -->
+        <script src="../../www/js/core/constants.js"></script>
+        
+        <!-- javascipt object -->
+         <script src="js/objects/location.js"></script>
+         <script src="js/objects/document.js"></script>
+         <script src="js/objects/poidata.js"></script>
+        
+        <!-- Services -->
+        <script src="js/services/locationService.js"></script>
+        <script src="../../www/js/services/databaseService.js"></script>
+        
+        <!-- marker representation-->
+        <script src="js/marker.js"></script>    
+        <!-- World logic-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    
+    <body >
+     <div data-role="page" id="page1" style="background: none;" >
+            
+            <!-- MAIN PAGE CONTENT -->
+
+            <!-- transparent footer-->
+            <div data-role="footer" data-theme="f" class="ui-bar" data-position="fixed" style="text-align:center;">
+
+                <!-- Add POI info button -->
+                <p style="margin: 0px;">
+                    <a id="poiInfoButton" href="#popupPOIInfo" data-rel="popup" data-role="button" class="ui-icon-alt" data-inline="true" data-transition="pop" data-icon="plus" data-theme="e" data-iconpos="notext" data-theme="e">Add POI Info</a> 
+                </p>
+
+                <!-- popup displayed when button clicked -->
+                <div data-role="popup" id="popupPOIInfo" class="ui-content" data-theme="e" style="max-width:350px;">
+                    <form method="post" action="#">
+                        <input type="text" name="title" id="title" placeholder="Title..."/>
+                        <textarea name="desc" id="desc" placeholder="Description..." class="desc"></textarea>
+                        <p style="margin: 0px;text-align:right;"><a id="postPOIinfo" href="javascript:arworld.postPOIinfo();" class=" ui-alt-icon" data-inline="true" data-icon="alert" data-theme="e" data-iconpos="notext">Post</a></p>    
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </body>
+    
+</html>

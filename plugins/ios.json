@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.cv.helloWorld"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.cv.helloWorld"
+        },
+        "com.couchbase.lite.phonegap": {
+            "PACKAGE_NAME": "com.cv.helloworld"
+        }
+    },
+    "dependent_plugins": {}
+}

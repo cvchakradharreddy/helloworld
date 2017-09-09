@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+        "spec": "git+https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+          "sshUrl": "git+ssh://git@github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+          "httpsUrl": "git+https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+          "gitUrl": "git://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+          "shortcut": "github:couchbaselabs/Couchbase-Lite-PhoneGap-Plugin",
+          "directUrl": "https://raw.githubusercontent.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin/master/package.json"
+        }
+      },
+      "/Users/kickass/My_Work/Phonegap/HelloWorld!/node_modules"
+    ]
+  ],
+  "_from": "git+https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+  "_id": "com.couchbase.lite.phonegap@1.4.0",
+  "_inCache": true,
+  "_location": "/com.couchbase.lite.phonegap",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+    "spec": "git+https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+      "sshUrl": "git+ssh://git@github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+      "httpsUrl": "git+https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+      "gitUrl": "git://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+      "shortcut": "github:couchbaselabs/Couchbase-Lite-PhoneGap-Plugin",
+      "directUrl": "https://raw.githubusercontent.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git#91f997bce28bd7170a70e2a9b3c2ba0a096472fb",
+  "_shasum": "4ae33059c4a1efa2baeec975aaa9a9444013bfa5",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+  "_where": "/Users/kickass/My_Work/Phonegap/HelloWorld!/node_modules",
+  "author": {
+    "name": "Couchbase"
+  },
+  "bugs": {
+    "url": "https://forums.couchbase.com/c/mobile/couchbase-lite"
+  },
+  "cordova": {
+    "id": "com.couchbase.lite.phonegap",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "Install Couchbase Lite in your app to enable JSON sync",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "gitHead": "91f997bce28bd7170a70e2a9b3c2ba0a096472fb",
+  "homepage": "https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin",
+  "keywords": [
+    "couchbase",
+    "couchbase-lite-phonegap",
+    "couchbase-lite",
+    "cordova"
+  ],
+  "license": "Apache 2.0",
+  "name": "com.couchbase.lite.phonegap",
+  "optionalDependencies": {},
+  "readme": "# PhoneGap plugin for Couchbase Lite\n\nCouchbase Lite is an embedded JSON database for occasionally connected devices. It syncs data in the background, so users can collaborate across devices. There is an event based `_changes` JSON feed API so you can drive data-binding UI frameworks like Sencha and Backbone to reflect remote updates interactively.\n\nIt works with native code as well as Cordova / PhoneGap on iOS and Android (you can even sync with Mac desktops), so it doesn't matter where your users are, they can work with the data, and as soon as they get back online, everyone will see their changes.\n\nFor instructions on using the plugin, see the [PhoneGap Getting Started](https://developer.couchbase.com/documentation/mobile/current/installation/phonegap/index.html) page.\n\n## Architecture\n\nThis is where the plugin fits in the picture:\n\n![architecture.png](http://cl.ly/image/3b15030Y3f0q/couchbase-lite-phonegap-plugin-android.png)\n\n_Note:_ your JavaScript code can also directly communicate with Couchbase Lite over a Javascript<->Native bridge, to [ask it what URL it has launched on for subsequent XHR access](https://github.com/couchbaselabs/LiteGap/blob/master/www/litegap-example.html)\n\n# Where to go from here\n\nThere's an [example chat app with PhoneGap](https://github.com/couchbaselabs/CouchChat-PhoneGap) that illustrates the channel sync API. You can [read more about the app here](https://github.com/couchbaselabs/CouchChat-PhoneGap).\n\nIf you made it this far, you are now ready to build your custom PhoneGap App by editing the HTML, CSS, and Javascript files under the www directory.  Your same application code will work on both the iOS and Android platforms!\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git"
+  },
+  "version": "1.4.0"
+}
