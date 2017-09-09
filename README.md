@@ -1,5 +1,5 @@
 # Hello World!
-An augmented reality based social networking app
+##An augmented reality based social networking app
 
 Pokémon Go and Snapchat’s lenses have drawn attention to the world of augmented reality (AR). Facebook and many other applications have proven that social networking is a major activity in our physical world. Have given a thought for a social networking app that is completely experienced in an augmented reality world is astonishing and challenging at the same.
 
