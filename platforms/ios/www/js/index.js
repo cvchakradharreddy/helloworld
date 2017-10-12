@@ -144,7 +144,7 @@ var app = {
     },
     
     toggleTab: function (tab) {
-        if(tab="signIn"){
+        if(tab=="signIn"){
             $("#signupbox").hide();
             $("#signinbox").show();
            } else {
