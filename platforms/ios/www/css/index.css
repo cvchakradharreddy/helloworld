@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
+    background-color:plum;
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -38,25 +38,32 @@ body {
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:40px;
+    height:0px;
     margin:0px;
     padding:90px;
     text-transform:uppercase;
-    width:100%;
+    width:0%;
 }
 
 #container {
+    align-items:stretch;
     width: 100%;
     height: auto;
     margin: 5%;
-    margin-right: auto;
+    margin-right:auto;
     margin-left: auto;
-    background-color: white;
+    background-color: #625777;
 
-    box-sizing: border-box;
-    box-shadow: 0px 0px 12px #A7A7A7
+    box-sizing:content-box;
+    box-shadow: 0px 0px 12px #625777;
 }
+.fa-check-circle-o{
+    background-color:#978fa8;
+    color: aqua;
+    width: 267px;
+    height: 68px;
 
+}
 #tabbox{
     width: 100%;
     height: 40px;
@@ -64,6 +71,7 @@ body {
    
 }
 .tab{
+    
     display:block;
     width: 50%;
     height: 40px;
@@ -75,6 +83,7 @@ body {
 }
 
 #tabbox a{
+    
     float: left;
     margin-left: 0px;
 }
@@ -90,11 +99,13 @@ body {
     
 }
 .txtfield{
+    border:none;
     border-radius: 5px;
-    width: 222px;
+    width: 110px;
     height: 27px;
-    padding-left: 40px;
+    padding-left: 0px;
 }
+
 
 .btn{
     display:block;
@@ -108,25 +119,24 @@ body {
     width: 244px;
 }
 
-#signupbox{
+#signinbox{
     padding: 15px;
-    margin: 30px 0px 0px 30px;
+    margin: auto;
 }
 .app {
-    /*background: url(../images/cordova.png) no-repeat center top; */
-    position: absolute;
     left: 46%;
-    top: 28%;
-    height: 264px;
+    top: 0%;
+    height: 0px;
     width: 267px;
     text-align: center;
     padding: 180px 0px 0px 0px;
-    margin: -115px 0px 0px -112px;
+    margin:auto;
 }
 
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+@media screen and (min-aspect-ratio: /1) and (min-width:400px) {
+    
     .app {
-        background-position:left center;
+        background-position:center;
         padding:75px 0px 75px 170px;
         margin:-90px 0px 0px -198px;
     }

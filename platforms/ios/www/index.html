@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes" name="viewport">
-		<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+		<!---<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">--->
         <link rel="stylesheet" href="plugins/font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
@@ -19,9 +19,10 @@
     </head>
     <body>
         <div class="app">
-         
+         <i class="fa fa-check-circle-o fa-5x" aria-hidden="true"></i>
         <div id="container">
             <div id="tabbox">
+                
                 <a href="#" id="signin" class="tab select">Sign In</a>
                 <a href="#" id="signup" class ="tab signup">Sign Up </a>
             </div>
@@ -29,10 +30,10 @@
                 <div id="signinbox">
                     <form action="#" id="signinform" method="post">
                      
-                        <input type="email" name="email" id="email" class="txtfield" tabindex="1" placeholder="Email Address" />
+                        <input type="text" name="email" id="email" class="txtfield" tabindex="1" placeholder="Username" />
                         <br />
                        
-                        <input type="password" name="password" id="password" class="txtfield" tabindex="2" placeholder="Password" />
+                        <input type="password" name="password" id="password" class="txtfield1" tabindex="2" placeholder="Password" />
                         
                         <br />
 
