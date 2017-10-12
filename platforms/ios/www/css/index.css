@@ -71,7 +71,6 @@ body {
    
 }
 .tab{
-    
     display:block;
     width: 50%;
     height: 40px;
@@ -93,7 +92,6 @@ body {
 }
 
 #signupbox {
-
      display: none;
     padding: 40px;
     

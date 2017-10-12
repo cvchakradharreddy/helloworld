@@ -2,7 +2,7 @@
 var app = {
     isARWorldLoaded: false,
     ARWorld_config:  {
-            "path": "www/ar_world/main.html",
+            "path": "www/ar_world/view/main.html",
             "requiredFeatures": [
                 "geo"
             ],
@@ -141,24 +141,29 @@ var app = {
                 alert(alertMessage);
             }
         }
+    },
+    
+    toggleTab: function (tab) {
+        if(tab="signIn"){
+            $("#signupbox").hide();
+            $("#signinbox").show();
+           } else {
+            $("#signinbox").hide();
+            $("#signupbox").show();
+           }
+    },
+    
+    signIn: function () {
+        var userName = $("#in_user_name").val();
+        var userPwd = $("#in_user_pwd").val(); 
+    },
+    
+    signUp: function () {
+        var userName = $("#up_user_name").val();
+        var userEmail = $("#up_user_email").val();
+        var userPwd = $("#up_user_pwd").val(); 
     }
+    
+    
 };
 app.initialize();
-$(document).ready(function(){
-$(".tab").click(function(){
-var x=$(this).attr("id");
-if(x="signup")
-{
-$("#signin").removeclass("select");
-$("#signup").addclass("select");
-$("#signupbox").slidedown();
-$("#signin").slideup();
-}
-else{
-$("#signup").removeclass("select");
-$("#signin").addclass("select");
-$("#signinbox").slidedown();
-$("#signup").slideup();
-}
-});
-});
