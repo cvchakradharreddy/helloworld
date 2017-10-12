@@ -38,42 +38,130 @@ body {
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:100%;
+    height:40px;
     margin:0px;
-    padding:0px;
+    padding:90px;
     text-transform:uppercase;
     width:100%;
 }
 
-/* Portrait layout (default) */
+#container {
+    width: 100%;
+    height: auto;
+    margin: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px #A7A7A7
+}
+
+#tabbox{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #fff;
+   
+}
+.tab{
+    display:block;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    -webkit-border-bottom-left-radius:20px;
+    -webkit-border-bottom-right-radius: 20px;
+    text-transform:uppercase;
+}
+
+#tabbox a{
+    float: left;
+    margin-left: 0px;
+}
+
+.select{
+ 
+}
+
+#signupbox {
+
+     display: none;
+    padding: 40px;
+    
+}
+.txtfield{
+    border-radius: 5px;
+    width: 222px;
+    height: 27px;
+    padding-left: 40px;
+}
+
+.btn{
+    display:block;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    margin: 0px 0px 0px 11px;
+    box-shadow: 0px 0px 5px #fff;
+    width: 244px;
+}
+
+#signupbox{
+    padding: 15px;
+    margin: 30px 0px 0px 30px;
+}
 .app {
-     /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:40%;
-    height:300px;                   /* text area height */
-    width:230px;                   /* text area width */
-    text-align:center;
-    padding: 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    /*background: url(../images/cordova.png) no-repeat center top; */
+    position: absolute;
+    left: 46%;
+    top: 28%;
+    height: 264px;
+    width: 267px;
+    text-align: center;
+    padding: 180px 0px 0px 0px;
+    margin: -115px 0px 0px -112px;
 }
 
-.logo {
-    background:url(../img/logo.png) no-repeat center top;
-    height:170px;                   /* text area height */
-    width:230px;
-}
-
-/* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
+        padding:75px 0px 75px 170px;
+        margin:-90px 0px 0px -198px;
     }
 }
+
+
+
+/* Portrait layout (default)
+.app {
+    
+    position:absolute;             
+    left:50%;
+    top:40%;
+    height:300px;                   
+    width:230px;                   
+    text-align:center;
+    padding: 0px;     
+    margin:-115px 0px 0px -112px;  
+}*/
+
+
+/*.logo {
+    background:url(../img/logo.png) no-repeat center top;
+    height:50px;                  
+    width:50px;
+}*/
+
+
+/*@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  
+        margin:-90px 0px 0px -198px;  
+    }
+}*/
 
 h1 {
     font-size:24px;

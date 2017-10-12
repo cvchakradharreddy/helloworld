@@ -25,6 +25,7 @@ var app = {
         this.receivedEvent('deviceready');
     },
     
+    
     connectDB: function() {
       if (window.cblite) {
           window.cblite.getURL(function (err, url) {
@@ -142,5 +143,22 @@ var app = {
         }
     }
 };
-
 app.initialize();
+$(document).ready(function(){
+$(".tab").click(function(){
+var x=$(this).attr("id");
+if(x="signup")
+{
+$("#signin").removeclass("select");
+$("#signup").addclass("select");
+$("#signupbox").slidedown();
+$("#signin").slideup();
+}
+else{
+$("#signup").removeclass("select");
+$("#signin").addclass("select");
+$("#signinbox").slidedown();
+$("#signup").slideup();
+}
+});
+});

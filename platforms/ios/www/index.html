@@ -6,6 +6,7 @@
 		<meta name="format-detection" content="telephone=no" />
 		<meta content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes" name="viewport">
 		<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <link rel="stylesheet" href="plugins/font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
         
@@ -18,14 +19,60 @@
     </head>
     <body>
         <div class="app">
-            <p class="logo"></p>
-            <h1>Hello World!</h1>
+         
+        <div id="container">
+            <div id="tabbox">
+                <a href="#" id="signin" class="tab select">Sign In</a>
+                <a href="#" id="signup" class ="tab signup">Sign Up </a>
+            </div>
+            <div id="formpanel">
+                <div id="signinbox">
+                    <form action="#" id="signinform" method="post">
+                     
+                        <input type="email" name="email" id="email" class="txtfield" tabindex="1" placeholder="Email Address" />
+                        <br />
+                       
+                        <input type="password" name="password" id="password" class="txtfield" tabindex="2" placeholder="Password" />
+                        
+                        <br />
+
+                        <br />
+                        <br />
+
+                        <input type="submit" name="loginbtn" id="submitlogin" Value="Continue" class="btn" tabindex="3" />
+                      <p>Forgot Password?</p>
+                    </form>
+                    </div>
+                <div id="signupbox">
+                    <form action="#" id="signupform" method="post">
+
+                        <input type="text" name="uname" id="uname" class="txtfield" tabindex="4" placeholder="Username" />
+
+                        <input type="email" name="newemail" id="newemail" class="txtfield" tabindex="5" placeholder="Email" />
+
+                        <input type="password" name="password1" id="password1" class="txtfield" tabindex="6" placeholder="Password" />
+
+                        <input type="password" name="password2" id="password2" class="txtfield" tabindex="7" placeholder="Password" />
+                        <br />
+                        <input type="submit" name="registerbtn" id="registerbtn" Value="Sign Up" class="btn" tabindex="8" />
+
+                    </form>
+                </div>
+        </div>
+          </div>
+       
+          </div>
+
+	
+    <!--<div class="app">-->
+           <!-- <p class="logo"></p> 
+            <h1>Hello World!</h1> -->
             <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received"><a href="javascript:app.initiateARWorld();">Guest Login</a></p>
+             <p class="event listening"></p>
+                <p class="event received"><a href="javascript:app.initiateARWorld();"></a></p> 
                 <p id="database_status"></p>
             </div>
-        </div>
+    <!--    </div>-->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/swagger-client.min.js"></script>
         <script type="text/javascript" src="js/couchbase-lite.js"></script>
