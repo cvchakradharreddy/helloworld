@@ -21,12 +21,12 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        this.connectDB();
+        this.connectDB(DB_USER);
         this.receivedEvent('deviceready');
     },
     
     
-    connectDB: function() {
+    connectDB: function(db_name) {
       if (window.cblite) {
           window.cblite.getURL(function (err, url) {
             if (err) {
@@ -35,30 +35,30 @@ var app = {
                 console.log("Couchbase Lite running at " + url);
                 databaseService.getAllDatabases()
                     .then(function(dbs){
-                        if (dbs.indexOf(DB_NAME) == -1) {
-                            databaseService.createDatabase(DB_NAME)     .then(function(res){
+                        if (dbs.indexOf(db_name) == -1) {
+                            databaseService.createDatabase(db_name)     .then(function(res){
                                     console.log("Database " + res.db_name +" created");
                                 })
                                 .catch(function(err){
-                                    console.log("Database "+DB_NAME+" creation failed with error: "+err);
-                                 $("#database_status").html("Database "+DB_NAME+" fetch failed with error: "+err);
+                                    console.log("Database "+db_name+" creation failed with error: "+err);
+                                 $("#database_status").html("Database "+db_name+" fetch failed with error: "+err);
                                 });
                                console.log("Database " + url);
                         } else {
-                            databaseService.getDatabase(DB_NAME)
+                            databaseService.getDatabase(db_name)
                                 .then(function(res){
                                     console.log("Database " + res.db_name +" is available");
                                     $("#database_status").html("Database " + res.db_name +" is available");
                                 })
                                 .catch(function(err){
-                                    console.log("Database "+DB_NAME+" fetch failed with error: "+err);
-                                     $("#database_status").html("Database "+DB_NAME+" fetch failed with error: "+err);
+                                    console.log("Database "+db_name+" fetch failed with error: "+err);
+                                     $("#database_status").html("Database "+db_name+" fetch failed with error: "+err);
                                  });
                         }
                     }) 
                     .catch(function (err) {
                    console.log(err);
-                    $("#database_status").html("Database "+DB_NAME+" fetch failed with error: "+err);
+                    $("#database_status").html("Database "+db_name+" fetch failed with error: "+err);
                 });
             }
         });
@@ -141,29 +141,6 @@ var app = {
                 alert(alertMessage);
             }
         }
-    },
-    
-    toggleTab: function (tab) {
-        if(tab=="signIn"){
-            $("#signupbox").hide();
-            $("#signinbox").show();
-           } else {
-            $("#signinbox").hide();
-            $("#signupbox").show();
-           }
-    },
-    
-    signIn: function () {
-        var userName = $("#in_user_name").val();
-        var userPwd = $("#in_user_pwd").val(); 
-    },
-    
-    signUp: function () {
-        var userName = $("#up_user_name").val();
-        var userEmail = $("#up_user_email").val();
-        var userPwd = $("#up_user_pwd").val(); 
-    }
-    
-    
+    }   
 };
 app.initialize();

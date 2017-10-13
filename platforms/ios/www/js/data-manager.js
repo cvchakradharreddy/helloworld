@@ -1,6 +1,6 @@
+//This file is not used, Instead using databaseService.js
 
-
-function initRESTClient(url) {
+function initRESTClient(url, db_name) {
   var client = new SwaggerClient({
     spec: window.spec,
     usePromise: true,
@@ -16,13 +16,13 @@ function initRESTClient(url) {
       client.server.get_all_dbs()
         .then(function (res) {
               var dbs = res.obj;
-              if (dbs.indexOf(DB_NAME) == -1) {
-                return client.database.put_db({db: DB_NAME});
+              if (dbs.indexOf(db_name) == -1) {
+                return client.database.put_db({db: db_name});
               }
-              return client.database.get_db({db: DB_NAME});
+              return client.database.get_db({db: db_name});
         })
         .then(function (res) {
-                return client.document.post({db: DB_NAME, body: {title: 'Couchbase Mobile', sdk: 'PhoneGap'}});
+                return client.document.post({db: db_name, body: {title: 'Couchbase Mobile', sdk: 'PhoneGap'}});
             }, function(err){
                 console.log('Error fetching database: ' + err);
         })
