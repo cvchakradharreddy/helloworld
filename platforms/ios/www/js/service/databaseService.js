@@ -153,11 +153,14 @@ var databaseService = (function (){
             });
              return promise;
         },
-        createDocument: function(db_name, pbody) {
+        createDocument: function(db_name, doc, doc_id) {
+            if(doc_id) {
+               doc["_id"] = doc_id;
+               }
             var promise = new Promise(function(resolve, reject){
                 databaseService.getClient()
                     .then(function(client){
-                      client.document.post({db: db_name, body: pbody})
+                      client.document.post({db: db_name, body: doc})
                         .then(function (res) {
                             return resolve(res.obj);
                         })

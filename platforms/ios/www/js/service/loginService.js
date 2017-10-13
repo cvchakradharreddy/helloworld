@@ -9,9 +9,9 @@ var loginService = (function (){
     return {
         signUpUser: function(/* object */ user) {
             var promise = new Promise(function(resolve, reject){
-                databaseService.createDocument(login_db, user)
+                databaseService.createDocument(login_db, user, user.username)
                     .then(function (res) {
-                            return resolve(res.obj);
+                            return resolve(res);
                     })
                     .catch(function (err) {
                            return reject(err);
@@ -21,9 +21,9 @@ var loginService = (function (){
         },
         signInUser: function(/* object */ user) {
              var promise = new Promise(function(resolve, reject){
-                databaseService.createDocument(login_db, user)
+                databaseService.getDocument(login_db, user.username)
                     .then(function (res) {
-                            return resolve(res.obj);
+                            return resolve(res);
                     })
                     .catch(function (err) {
                            return reject(err);

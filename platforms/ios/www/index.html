@@ -17,14 +17,46 @@
     </head>
     <body>
         <div class="app">
-          <div w3-include-html="view/login.html"></div>
-    
-        </div>
+         <!-- <div w3-include-html="view/login.html"></div>
+        
+        </div> -->
+            <div id="login_page">
+                <div id="container">
+                    <i class="fa fa-check-circle-o fa-5x" aria-hidden="true"></i>
+                        <div id="tabbox">
+                            <a href="javascript:login.toggleTab('signIn');" id="signin" class="tab select">Sign In</a>
+                            <a href="javascript:login.toggleTab('signUp');" id="signup" class ="tab signup">Sign Up </a>
+                        </div>
+                        <div id="formpanel">
+                                <p id="login_error_info"></p>
+                                 <div id="signinform">
+                                        <form name="form1" id="signinbox"   action="javascript:login.signIn();"> 
+                                        <input type="text" name="username" id="in_user_name" class="txtfield" placeholder="Username" tabindex="1"  required />
+                                        <br>
+                                        <input type="password" name="password" id="in_user_pwd" class="txtfield" placeholder="Password" tabindex="2" required/>
+                                        <br><br/>  <br><br/>
+                                        <input type="submit" Value="continue" tabindex="3" />
+                                        <p>Forgot Password?</p>
+                                        </form>
+                                    </div>
 
-    <!--<div class="app">-->
+                                 <div id="signupbox">
+                                    <form name="form2" id="signinbox" action="javascript:login.signUp();"> 
+                                    <input type="text" name="username" id="up_user_name" class="txtfield" placeholder="Username" required />
+                                    <input type="email" name="newemail" id="up_user_email" class="txtfield"  placeholder="Email"  required/>
+                                    <input type="password" name="password1" id="up_user_pwd" class="txtfield" placeholder="Password" required />
+                                    <br /> 
+                                    <input type="submit" Value="Sign Up"/>
+                                     </form>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            
+
            <!-- <p class="logo"></p> 
             <h1>Hello World!</h1> -->
-            <div id="deviceready" class="blink">
+            <div id="deviceready" style="display: none;">
              <p class="event listening"></p>
                 <p class="event received"><a href="javascript:app.initiateARWorld();"></a></p> 
                 <p id="database_status"></p>
@@ -41,14 +73,20 @@
         <script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="jquery/jquery.mobile-1.3.2.min.js"></script>
        
-        <!-- Application javascript files -->
+        <!-- Plug-ins -->
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/swagger-client.min.js"></script>
         <script type="text/javascript" src="js/couchbase-lite.js"></script>
-         <script type="text/javascript" src="js/core/constants.js"></script>
-        <script type="text/javascript" src="js/service/databaseService.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
+        <!-- Application javascript files -->
+            <script type="text/javascript" src="js/core/constants.js"></script>
+            <!-- Model objects -->
+            <script src="ar_world/js/model/user.js"></script>
+            <!-- Services -->
+            <script type="text/javascript" src="js/service/databaseService.js"></script>
+            <script type="text/javascript" src="js/service/loginService.js"></script>
+            
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript" src="js/login.js"></script>
        
     </body>
 </html>
