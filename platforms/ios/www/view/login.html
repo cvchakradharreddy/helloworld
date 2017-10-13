@@ -1,30 +1,33 @@
 <!--Login page View template-->
 
 <div id="login_page">
-    <i class="fa fa-check-circle-o fa-5x" aria-hidden="true"></i>
     <div id="container">
+        <i class="fa fa-check-circle-o fa-5x" aria-hidden="true"></i>
             <div id="tabbox">
                 <a href="javascript:login.toggleTab('signIn');" id="signin" class="tab select">Sign In</a>
                 <a href="javascript:login.toggleTab('signUp');" id="signup" class ="tab signup">Sign Up </a>
             </div>
             <div id="formpanel">
-                <div id="signinbox">    
-                     <form action="#" id="signupform" method="post">
-                        <input type="text" name="email" id="in_user_name" class="txtfield" placeholder="Username" tabindex="1"  />
-                        <br><br/>
-                        <input type="password" name="password" id="in_user_pwd" class="txtfield1" placeholder="Password" tabindex="2" />
-                        <br><br/>  <br><br/>
-                        <input type="button" class="btn" Value="continue" onClick="login.signIn()" tabindex="3" />
-                        <p>Forgot Password?</p>
-                    </form>
-                </div>
-                <div id="signupbox">
-                    <input type="text" name="uname" id="up_user_name" class="txtfield" placeholder="Username" />
-                    <input type="email" name="newemail" id="up_user_email" class="txtfield"  placeholder="Email" />
-                    <input type="password" name="password1" id="up_user_pwd" class="txtfield" placeholder="Password" />
-                    <br />
-                    <input type="button" class="btn" Value="Sign Up"  onClick="login.signUp()"/>
-                </div>
+                     <div id="signinform">
+                            <form name="form1" action="#" id="signinbox"  method="post"> 
+                            <input type="text" name="username" id="in_user_name" class="txtfield" placeholder="Username" tabindex="1"  required />
+                            <br>
+                            <input type="password" name="password" id="in_user_pwd" class="txtfield" placeholder="Password" tabindex="2" required/>
+                            <br><br/>  <br><br/>
+                            <input type="button" class="btn" Value="continue" onClick="login.signIn()" tabindex="3" />
+                            <p>Forgot Password?</p>
+                            </form>
+                        </div>
+                
+                     <div id="signupbox">
+                        <form name="form2" action="#" id="signinbox" method="post"> 
+                        <input type="text" name="username" id="up_user_name" class="txtfield" placeholder="Username" required />
+                        <input type="email" name="newemail" id="up_user_email" class="txtfield"  placeholder="Email"  required/>
+                        <input type="password" name="password1" id="up_user_pwd" class="txtfield" placeholder="Password" required />
+                        <br /> 
+                        <input type="button" class="btn" Value="Sign Up"  onClick="login.signUp()"/>
+                         </form>
+                    </div>
             </div>
     </div>
 </div>
