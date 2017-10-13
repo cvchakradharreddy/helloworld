@@ -1,3 +1,7 @@
+/* 
+Login page controller
+*/
+
 var login = {
     toggleTab: function (tab) {
             if(tab=="signIn"){
