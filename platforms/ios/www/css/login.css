@@ -55,16 +55,47 @@ CSS for login page
     margin: auto;
     
 }
+
 .txtfield{
+    background-color: transparent;
     border:none;
     border-radius: 5px;
     width: 110px;
     height: 27px;
-    padding-left: 0px;
+    padding-left: 30px;
     
 }
 
-
+#in_user_name{
+    background-color: transparent;
+    padding-left: 25px;
+}
+#in_user_pwd{
+    background-color: transparent;
+    padding-left: 25px;
+}
+#up_user_name{
+    background-color: transparent;
+    padding-left: 25px;
+}
+#up_user_email{
+    background-color: transparent;
+    padding-left: 25px;
+}
+#up_user_pwd{
+    background-color: transparent;
+    padding-left: 25px;
+}
+.signinbox{
+    background-color: transparent;
+}
+.username1 span {
+            position: absolute;
+            color: #d4d4d4;
+            left: 10px;
+            top: 8px;
+            font-size: 20px;
+        }
 .btn{
     display:block;
     padding: 10px;
@@ -77,6 +108,25 @@ CSS for login page
     width: 244px;
 }
 
+.username1 {
+            position: relative;
+            width: 90%;
+            margin: 15px auto;
+        }
+.username1 input {
+            width: 100%;
+            padding: 10px 5px 10px 40px;
+            display: block;
+            border: 1px solid #EDEDED;
+            border-radius: 4px;
+            transition: 0.2s ease-out;
+            color: #a1a1a1;
+        }
+.username1 input:focus {
+            padding: 10px 5px 10px 10px;
+            outline: 0;
+            border-color: #FF7052;
+        }
 #signinbox{
     padding: 15px;
     margin: auto;

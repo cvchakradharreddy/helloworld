@@ -31,10 +31,16 @@
                                 <p id="login_error_info"></p>
                                  <div id="signinform">
                                         <form name="form1" id="signinbox"   action="javascript:login.signIn();"> 
-                                        <input type="text" name="username" id="in_user_name" class="txtfield" placeholder="Username" tabindex="1"  required />
+                                            <div class="username1">
+                                        <input type="text" name="username" id="in_user_name"  class="txtfield usr" placeholder="Username" tabindex="1"  required />
+                                                 <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                            </div>    
                                         <br>
+                                        <div class="username1">
                                         <input type="password" name="password" id="in_user_pwd" class="txtfield" placeholder="Password" tabindex="2" required/>
-                                        <br><br/>  <br><br/>
+                                           <span> <i class="fa fa-key" aria-hidden="true"></i></span>
+                                            <br><br/>  <br><br/>
+                                        </div>
                                         <input type="submit" Value="continue" tabindex="3" />
                                         <p>Forgot Password?</p>
                                         </form>
@@ -42,10 +48,19 @@
 
                                  <div id="signupbox">
                                     <form name="form2" id="signinbox" action="javascript:login.signUp();"> 
-                                    <input type="text" name="username" id="up_user_name" class="txtfield" placeholder="Username" required />
+                                    <div class="username1">
+                                        <input type="text" name="username" id="up_user_name" class="txtfield" placeholder="Username" required />
+                                        <span><i class= "fa fa-usr" aria-hidden="true"></i></span>
+                                        </div>
+                                        <div class="username1">
                                     <input type="email" name="newemail" id="up_user_email" class="txtfield"  placeholder="Email"  required/>
+                                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                        </div>
+                                        <div class="username1">
                                     <input type="password" name="password1" id="up_user_pwd" class="txtfield" placeholder="Password" required />
-                                    <br /> 
+                                    <span> <i class="fa fa-key" aria-hidden="true"></i></span>
+                                        </div>
+                                            <br /> 
                                     <input type="submit" Value="Sign Up"/>
                                      </form>
                                 </div>
