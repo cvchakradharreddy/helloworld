@@ -50,17 +50,16 @@ CSS for login page
 
 #signupbox {
      display: none;
-    padding: 40px;
    /* padding: 15px; */
     margin: auto;
     
 }
 
 .txtfield{
-    background-color: transparent;
+    background: ;
     border:none;
     border-radius: 5px;
-    width: 110px;
+    width: 100%;
     height: 27px;
     padding-left: 30px;
     
@@ -69,6 +68,9 @@ CSS for login page
 #in_user_name{
     background-color: transparent;
     padding-left: 25px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
 }
 #in_user_pwd{
     background-color: transparent;
@@ -91,10 +93,13 @@ CSS for login page
 }
 .username1 span {
             position: absolute;
-            color: #d4d4d4;
+            color: black;
             left: 10px;
             top: 8px;
             font-size: 20px;
+    width: 20px;
+    height: 20px;
+        
         }
 .btn{
     display:block;
@@ -127,6 +132,51 @@ CSS for login page
             outline: 0;
             border-color: #FF7052;
         }
+.username2 {
+            position: relative;
+            width: 90%;
+            margin: 15px auto;
+        }
+.username2 input {
+            width: 100%;
+            padding: 10px 5px 10px 40px;
+            display: block;
+            border: 1px solid #EDEDED;
+            border-radius: 4px;
+            transition: 0.2s ease-out;
+            color: #a1a1a1;
+        }
+.username2 input:focus {
+            padding: 10px 5px 10px 10px;
+            outline: 0;
+            border-color: #FF7052;
+        }
+.username2 span {
+            position: absolute;
+            color: black;
+            left: 10px;
+            top: 8px;
+            font-size: 20px;
+    width: 20px;
+    height: 20px;
+        
+        }
+.username1 input[type="text"]
+.username1 input[type="password"]
+.username1 input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+#signinform input[type="text"]
+#signinform input[type="password"]
+#signinform input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
 #signinbox{
     padding: 15px;
     margin: auto;
