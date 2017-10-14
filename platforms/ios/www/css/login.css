@@ -36,16 +36,19 @@ CSS for login page
     -webkit-border-bottom-left-radius:20px;
     -webkit-border-bottom-right-radius: 20px;
     text-transform:uppercase;
+    text-decoration-color: black;
 }
 
 #tabbox a{
     
     float: left;
     margin-left: 0px;
+    color: white;
+    
 }
 
 .select{
- 
+    color: black;
 }
 
 #signupbox {
@@ -166,16 +169,24 @@ CSS for login page
 .username1 input[type="email"]
 {
     border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	height: 40px;
+	background: transparent;
+	color: #fff;
+	font-size: 16px;
 }
 #signinform input[type="text"]
 #signinform input[type="password"]
 #signinform input[type="email"]
 {
     border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	height: 40px;
+	background: transparent;
+	color: #fff;
+	font-size: 16px;
 }
 #signinbox{
     padding: 15px;
