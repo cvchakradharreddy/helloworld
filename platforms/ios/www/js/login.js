@@ -25,6 +25,7 @@ var login = {
                                 if(res){
                                     if(res.password == user.password) {
                                         console.log("User: "+user.username+" signIn successful");
+                                        app.initiateARWorld();
                                        } else {
                                         console.error("Incorrect Password! Try again.");
                                         $("#login_error_info").html("Incorrect Password! Try again.");
@@ -50,6 +51,7 @@ var login = {
                 loginService.signUpUser(user)
                     .then(function (res) {
                         console.log("User: "+user.username+" signUp successful");
+                        app.initiateARWorld();
                     })
                     .catch(function (err) {
                         if(err && err.obj.error == "conflict" && err.obj.reason == "Document exists"){
