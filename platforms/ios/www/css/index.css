@@ -34,6 +34,7 @@ body {
         left bottom,
         color-stop(0, #A7A7A7),
         color-stop(0.51, #E4E4E4)
+       
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
@@ -43,6 +44,7 @@ body {
     padding:90px;
     text-transform:uppercase;
     width:0%;
+    
 }
 
 .app {
@@ -53,6 +55,12 @@ body {
     text-align: center;
     padding: 180px 0px 0px 0px;
     margin:auto;
+
+}
+
+input{
+    background-color: transparent;
+    padding-left: 25px;
 }
 
 @media screen and (min-aspect-ratio: /1) and (min-width:400px) {
@@ -61,6 +69,7 @@ body {
         background-position:center;
         padding:75px 0px 75px 170px;
         margin:-90px 0px 0px -198px;
+        
     }
 }
 

@@ -10,13 +10,14 @@ CSS for login page
     margin-right:auto;
     margin-left: auto;
     background-color: #625777;
+   
 
     box-sizing:content-box;
     box-shadow: 0px 0px 12px #625777;
 }
-.fa-check-circle-o{
-    background-color:#978fa8;
-    color: aqua;
+.fa-check-circle{
+    background-color:#625777;
+    color: whitesmoke;
     width: 267px;
     height: 68px;
 
@@ -28,7 +29,7 @@ CSS for login page
    
 }
 .tab{
-    display:block;
+    display:inline;
     width: 50%;
     height: 40px;
     line-height: 40px;
@@ -37,10 +38,14 @@ CSS for login page
     -webkit-border-bottom-right-radius: 20px;
     text-transform:uppercase;
     text-decoration-color: black;
+     font-family: arial;
+    font-size: 15px;
 }
 
 #tabbox a{
     
+    font-family: arial;
+    font-size: 15px;
     float: left;
     margin-left: 0px;
     color: white;
@@ -48,18 +53,25 @@ CSS for login page
 }
 
 .select{
-    color: black;
+    color: yellow;
+}
+
+#signinbox {
+     
+   padding: 0px;
+    margin: auto;
+    
 }
 
 #signupbox {
      display: none;
-   /* padding: 15px; */
+   padding: 0px; 
     margin: auto;
     
 }
 
 .txtfield{
-    background: ;
+    background: white;
     border:none;
     border-radius: 5px;
     width: 100%;
@@ -68,13 +80,35 @@ CSS for login page
     
 }
 
+p{
+    font-family: arial;
+    font-size: 10px;
+    color: white;
+}
+
 #in_user_name{
     background-color: transparent;
     padding-left: 25px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
+    
 }
+
+/*input[type=text]{
+    background-color: transparent;
+    padding-left: 30px;
+    }
+
+input[type=password]
+{
+    background-color: transparent;
+    padding-left: 30px;
+    
+}
+input[type=email]
+{
+    background-color: transparent;
+    padding-left: 30px;
+    
+}*/
 #in_user_pwd{
     background-color: transparent;
     padding-left: 25px;
@@ -90,9 +124,6 @@ CSS for login page
 #up_user_pwd{
     background-color: transparent;
     padding-left: 25px;
-}
-.signinbox{
-    background-color: transparent;
 }
 .username1 span {
             position: absolute;
@@ -176,9 +207,9 @@ CSS for login page
 	color: #fff;
 	font-size: 16px;
 }
-#signinform input[type="text"]
-#signinform input[type="password"]
-#signinform input[type="email"]
+#signupform input[type="text"]
+#signupform input[type="password"]
+#signupform input[type="email"]
 {
     border: none;
 	border-bottom: 1px solid #fff;
@@ -187,8 +218,4 @@ CSS for login page
 	background: transparent;
 	color: #fff;
 	font-size: 16px;
-}
-#signinbox{
-    padding: 15px;
-    margin: auto;
 }

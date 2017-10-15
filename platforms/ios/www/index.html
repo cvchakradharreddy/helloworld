@@ -15,6 +15,7 @@
         <script type="text/javascript" src="js/w3.js"></script>
       
     </head>
+
     <body>
         <div class="app">
          <!-- <div w3-include-html="view/login.html"></div>-->
@@ -26,15 +27,15 @@
                             <a href="javascript:login.toggleTab('signIn');" id="signin" class="tab select"style="text-decoration:none;" >Sign In</a>
                             <a href="javascript:login.toggleTab('signUp');" id="signup" class ="tab signup"style="text-decoration:none;">Sign Up </a>
                         </div>
-                        <div id="formpanel">
+                    <div id="formpanel">
                                 <p id="login_error_info"></p>
-                                 <div id="signinform">
-                                        <form name="form1" id="signinbox"   action="javascript:login.signIn();"> 
+                                 <div id="signinbox">
+                                        <form name="form1" id="signinform"   action="javascript:login.signIn();"> 
                                             <div class="username2">
-                                        <input type="text" name="username" id="in_user_name"  class="txtfield usr" placeholder="Username" tabindex="1"  required />
+                                        <input type="text" name="username" id="in_user_name"  class="txtfield" placeholder="Username" tabindex="1"  required />
                                                  <span><i class="fa fa-user" aria-hidden="true"></i></span>
                                             </div>    
-                                        <br>
+                                        
                                         <div class="username1">
                                         <input type="password" name="password" id="in_user_pwd" class="txtfield" placeholder="Password" tabindex="2" required/>
                                            <span> <i class="fa fa-key" aria-hidden="true"></i></span>
@@ -42,14 +43,15 @@
                                         </div>
                                         <input type="submit" Value="continue" tabindex="3" />
                                         <p>Forgot Password?</p>
+    
                                         </form>
                                     </div>
 
                                  <div id="signupbox">
-                                    <form name="form2" id="signinbox" action="javascript:login.signUp();"> 
+                                    <form name="form2" id="signupform" action="javascript:login.signUp();"> 
                                     <div class="username2">
                                         <input type="text" name="username" id="up_user_name" class="txtfield" placeholder="Username" required />
-                                        <span><i class= "fa fa-usr fa-1x" aria-hidden="true"></i></span>
+                                        <span><i class= "fa fa-user" aria-hidden="true"></i></span>
                                         </div>
                                         <div class="username1">
                                     <input type="email" name="newemail" id="up_user_email" class="txtfield"  placeholder="Email"  required/>
@@ -59,11 +61,13 @@
                                     <input type="password" name="password1" id="up_user_pwd" class="txtfield" placeholder="Password" required />
                                     <span> <i class="fa fa-key" aria-hidden="true"></i></span>
                                         </div>
-                                            <br /> 
+                                            <br /> <br/>  <br>
                                     <input type="submit" Value="Sign Up"/>
+                                        <br/>
                                      </form>
                                 </div>
                         </div>
+                    
                 </div>
             </div>
             
@@ -99,4 +103,6 @@
             
             <script type="text/javascript" src="js/index.js"></script>
             <script type="text/javascript" src="js/login.js"></script>
+            <script type="text/javascript" src="tests/tests.js"></script>
 </html>
+          
