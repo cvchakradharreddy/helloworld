@@ -28,14 +28,26 @@ QUnit.test( "Sign in available", function(assert) {
 });
 
 QUnit.test("Sign up available", function(assert){
-    var signupTxt=$("#tabbox #signin").html();
+    var signupTxt=$("#tabbox #signup").html();
     var notEmpty=(signupTxt!="");
     assert.ok(notEmpty,"Label is not empty");
-    assert.equal("Sign Up", signupTxt,"Label matched");
+    assert.equal("Sign Up ", signupTxt,"Label matched");
            });
 QUnit.test("email signup",function(assert){
-    var emailid=$("#up_user_email").html();
     var check_email=/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
-    assert.ok(check_email.test(emailid)=== true);
-    
-})
+    assert.ok(check_email.test("ashish25@yahoo.com")=== true,"Valid Username");
+   assert.ok(check_email.test("ashish_25@yahoo.com")=== true,"Valid Username"); assert.ok(check_email.test("ashihs.com")===false,"Invalid Username");
+});
+QUnit.test("username",function(assert){
+    var check_username=/^[a-z][a-z0-9]+$/;
+    assert.ok(check_username.test("am15am")===true,"Valid Username");
+    assert.ok(check_username.test("a15am")===true,"Valid Username");
+    assert.ok(check_username.test("15am")===false,"Invalid Username");
+});
+QUnit.test("Password",function(assert){
+    var check_pwd=/^([a-zA-Z0-9@*#_-]{8,15})$/;
+    assert.ok(check_pwd.test("Ashish@345")===true,"Valid Password");
+    assert.ok(check_pwd.test("Ashish_345")===true,"Valid Password");
+    assert.ok(check_pwd.test("Ashish!345")===false,"InValid Password");
+           
+});
