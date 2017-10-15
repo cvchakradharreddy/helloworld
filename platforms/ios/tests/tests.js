@@ -27,3 +27,15 @@ QUnit.test( "Sign in available", function(assert) {
     assert.equal( "Sign In", signinTxt, "Label matched" );
 });
 
+QUnit.test("Sign up available", function(assert){
+    var signupTxt=$("#tabbox #signin").html();
+    var notEmpty=(signupTxt!="");
+    assert.ok(notEmpty,"Label is not empty");
+    assert.equal("Sign Up", signupTxt,"Label matched");
+           });
+QUnit.test("email signup",function(assert){
+    var emailid=$("#up_user_email").html();
+    var check_email=/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+    assert.ok(check_email.test(emailid)=== true);
+    
+})
