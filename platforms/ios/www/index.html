@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes" name="viewport">
-		<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <meta http-equiv="Content-Security-Policy" content="default-src *;img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;style-src  'self' 'unsafe-inline' *">
 		<link rel="stylesheet" href="plugins/font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/login.css" />
@@ -17,13 +17,21 @@
     </head>
 
     <body>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+<meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src	'self' 'unsafe-inline' *; img-src 'self' data: *">
+-->
+        
         <div class="app">
          <!-- <div w3-include-html="view/login.html"></div>-->
 
             <div id="login_page">
                 <div id="container">
+                    <br>
+                    <br>
+                    <br>
                     <i class="fa fa-check-circle fa-5x" aria-hidden="true"></i>
-                        <div id="tabbox">
+                    <br>    
+                    <div id="tabbox">
                             <a href="javascript:login.toggleTab('signIn');" id="signin" class="tab select"style="text-decoration:none;" >Sign In</a>
                             <a href="javascript:login.toggleTab('signUp');" id="signup" class ="tab signup"style="text-decoration:none;">Sign Up </a>
                         </div>
@@ -43,7 +51,7 @@
                                         </div>
                                         <input type="submit" Value="continue" tabindex="3" />
                                         <p>Forgot Password?</p>
-    
+                                        <br>
                                         </form>
                                     </div>
 
@@ -61,7 +69,7 @@
                                     <input type="password" name="password1" id="up_user_pwd" class="txtfield" placeholder="Password" required />
                                     <span> <i class="fa fa-key" aria-hidden="true"></i></span>
                                         </div>
-                                            <br /> <br/>  <br>
+                                            <br /> <br/>
                                     <input type="submit" Value="Sign Up"/>
                                         <br/>
                                      </form>
@@ -103,6 +111,6 @@
             
             <script type="text/javascript" src="js/index.js"></script>
             <script type="text/javascript" src="js/login.js"></script>
-            <script type="text/javascript" src="tests/tests.js"></script>
+        
 </html>
           

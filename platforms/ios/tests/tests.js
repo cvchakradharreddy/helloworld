@@ -35,8 +35,10 @@ QUnit.test("Sign up available", function(assert){
            });
 QUnit.test("email signup",function(assert){
     var check_email=/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
-    assert.ok(check_email.test("ashish25@yahoo.com")=== true,"Valid Username");
-   assert.ok(check_email.test("ashish_25@yahoo.com")=== true,"Valid Username"); assert.ok(check_email.test("ashihs.com")===false,"Invalid Username");
+    assert.ok(check_email.test("ashish25@yahoo.com")=== true,"Valid Email");
+   assert.ok(check_email.test("ashish_25@yahoo.com")=== true,"Valid Email"); 
+    assert.ok(check_email.test("ashihs.com")===false,"Invalid Email");
+    assert.ok(check_email.test("@gmail.com")===false,"Invalid Email");
 });
 QUnit.test("username",function(assert){
     var check_username=/^[a-z][a-z0-9]+$/;
