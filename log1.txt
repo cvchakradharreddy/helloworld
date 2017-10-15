@@ -1,0 +1,32 @@
+4e35639 was av15s, 4 hours ago, message: UI and Error Fixes
+8a2026b was Venkata Chakradhar Reddy Challa, 5 hours ago, message: Fixed sign in and sign up redirection after authenticated access
+421b1cf was am15am, 6 hours ago, message: Modified UI
+a816848 was am15am, 18 hours ago, message: Added a few more unit tests
+fee2e02 was am15am, 19 hours ago, message: Added a few unit test
+67c222b was Venkata Chakradhar Reddy Challa, 24 hours ago, message: QUnit test framework installed and provided a sample implementation
+2ad65fd was am15am, 32 hours ago, message: Changed the login page
+fae2b53 was am15am, 33 hours ago, message: Changed the signup page
+b06f077 was am15am, 2 days ago, message: Changed the login design
+f4b2813 was Venkata Chakradhar Reddy Challa, 2 days ago, message: Login service final implementation and code fixes for form validation
+88cca64 was av15s, 2 days ago, message: Form validations for login page
+7cc3acf was Venkata Chakradhar Reddy Challa, 2 days ago, message: Added login.css dedicated for login view design purpose and added description to newly created files
+791d0b8 was Venkata Chakradhar Reddy Challa, 2 days ago, message: Login service that map UI to database for Signup and Signin user
+be8fdd4 was Venkata Chakradhar Reddy Challa, 3 days ago, message: Minor fix to switch tab
+7cdd477 was Venkata Chakradhar Reddy Challa, 3 days ago, message: File adjustments to MVC pattern, Login view changes and code clean
+51a65c0 was am15am, 3 days ago, message: Login page View design changes
+7a9cc1b was av15s, 3 days ago, message: akhila access to git
+274f9d8 was am15am, 3 days ago, message: akhila access
+58b60bc was am15am, 3 days ago, message: test git access
+dd60481 was am15am, 3 days ago, message: Merge branch 'titanic_float_none' of https://github.com/cvchakradharreddy/helloworld into titanic_float_none Merging new branch
+e1197f2 was av15s, 3 days ago, message: deleted readme
+820055f was Venkata Chakradhar Reddy Challa, 5 days ago, message: new database ip network details
+43f2d88 was Venkata Chakradhar Reddy Challa, 4 weeks ago, message: deleted readme
+7aa86db was cvchakradharreddy, 4 weeks ago, message: Delete README.md
+a6e45a8 was Venkata Chakradhar Reddy Challa, 4 weeks ago, message: minor update
+72b995a was Venkata Chakradhar Reddy Challa, 5 weeks ago, message: minor updates
+10f7970 was Venkata Chakradhar Reddy Challa, 5 weeks ago, message: minor updates
+bf08644 was Venkata Chakradhar Reddy Challa, 5 weeks ago, message: minor updates
+183baf8 was Venkata Chakradhar Reddy Challa, 5 weeks ago, message: minor updates to read me file
+c2bd1f6 was Venkata Chakradhar Reddy Challa, 5 weeks ago, message: initial code push
+5b558c8 was Venkata Chakradhar Reddy Challa, 5 weeks ago, message: Initial code push
+aa8c305 was cvchakradharreddy, 5 weeks ago, message: Initial commit

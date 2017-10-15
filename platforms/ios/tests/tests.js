@@ -53,3 +53,10 @@ QUnit.test("Password",function(assert){
     assert.ok(check_pwd.test("Ashish!345")===false,"InValid Password");
            
 });
+Qunit.test("Signin", function(){
+   var s= $("#in_user_name").val("am15am");
+    $("#in_user_pwd").val("am14am");
+    $("#insign").onclick;
+    
+    
+});

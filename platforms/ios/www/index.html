@@ -5,11 +5,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes" name="viewport">
-        <meta http-equiv="Content-Security-Policy" content="default-src *;img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;style-src  'self' 'unsafe-inline' *">
+         <meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* *; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 		<link rel="stylesheet" href="plugins/font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/login.css" />
         <title>Hello World</title>  
+        <script> 
+        Qunit.test("Signin", function(assert){
+        
+        $("#in_user_name").val("am15am");
+        $("#in_user_pwd").val("am14am");
+        $(#insign).onclick;
+    
+        });
+        </script>
         
          <!-- W3 js file to include html in html -->
         <script type="text/javascript" src="js/w3.js"></script>
@@ -49,7 +58,7 @@
                                            <span> <i class="fa fa-key" aria-hidden="true"></i></span>
                                             <br><br/>  <br><br/>
                                         </div>
-                                        <input type="submit" Value="continue" tabindex="3" />
+                                        <input type="submit" id="insign"Value="continue" tabindex="3" />
                                         <p>Forgot Password?</p>
                                         <br>
                                         </form>

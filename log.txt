@@ -1,0 +1,197 @@
+commit 4e356394bf6067880f4d592132d119d7f6531098
+Author: av15s <av15s@my.fsu.edu>
+Date:   Sun Oct 15 15:20:30 2017 -0400
+
+    UI and Error Fixes
+
+commit 8a2026b27cf9196567517dd07586957ce26e31c1
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sun Oct 15 14:34:15 2017 -0400
+
+    Fixed sign in and sign up redirection after authenticated access
+
+commit 421b1cf16e806eb23b86e2eaf4dad7d8152db30f
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sun Oct 15 13:56:16 2017 -0400
+
+    Modified UI
+
+commit a816848504b0277c2afa1e58f5fd674bd7b50880
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sun Oct 15 01:49:06 2017 -0400
+
+    Added a few more unit tests
+
+commit fee2e02e57d1a9e9ce7821656e40be56754a6e57
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sun Oct 15 00:26:59 2017 -0400
+
+    Added a few unit test
+
+commit 67c222b0c04377e1b0a333c72a43cfbf1a7408b1
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sat Oct 14 19:24:00 2017 -0400
+
+    QUnit test framework installed and provided a sample implementation
+
+commit 2ad65fdd1e09afa84f194847db2040a3ffb523da
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sat Oct 14 11:19:55 2017 -0400
+
+    Changed the login page
+
+commit fae2b53f4c92c1e557630b569e3bca3d99e3d0e1
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sat Oct 14 10:27:21 2017 -0400
+
+    Changed the signup page
+
+commit b06f0777f23f8745d989e5ff9d97351ce0d87d8d
+Author: am15am <am15am@my.fsu.edu>
+Date:   Fri Oct 13 22:24:59 2017 -0400
+
+    Changed the login design
+
+commit f4b28136debfa305365f833858549f02dc465338
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Fri Oct 13 19:17:07 2017 -0400
+
+    Login service final implementation and code fixes for form validation
+
+commit 88cca64e112c9de1c16dd247478279c45240f8dd
+Author: av15s <av15s@my.fsu.edu>
+Date:   Fri Oct 13 16:08:51 2017 -0400
+
+    Form validations for login page
+
+commit 7cc3acfc48a5e73eeae290cc18fe5bee34c7282b
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Fri Oct 13 13:20:54 2017 -0400
+
+    Added login.css dedicated for login view design purpose and added description to newly created files
+
+commit 791d0b825dbe3f98ddf6b1b7402b8a882ee9c6ad
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Fri Oct 13 13:02:26 2017 -0400
+
+    Login service that map UI to database for Signup and Signin user
+
+commit be8fdd4138f93043ddf2cd9747ededa4461cde07
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Thu Oct 12 19:17:50 2017 -0400
+
+    Minor fix to switch tab
+
+commit 7cdd477517ae0eb01745b1176a4a3203f5752e0e
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Thu Oct 12 19:11:31 2017 -0400
+
+    File adjustments to MVC pattern, Login view changes and code clean
+
+commit 51a65c0dd996f8670f6921564f55d4adcad6a4f9
+Author: am15am <am15am@my.fsu.edu>
+Date:   Thu Oct 12 17:08:41 2017 -0400
+
+    Login page View design changes
+
+commit 7a9cc1b040808a85d8dd12c90d72fb5fc82b0182
+Author: av15s <av15s@my.fsu.edu>
+Date:   Thu Oct 12 14:22:04 2017 -0400
+
+    akhila access to git
+
+commit 274f9d8066a6fe7a661be3baba06a361910d5529
+Author: am15am <am15am.my.fsu.edu>
+Date:   Thu Oct 12 14:18:11 2017 -0400
+
+    akhila access
+
+commit 58b60bc8ef874e7da13b26478aaf64801e83290b
+Author: am15am <am15am.my.fsu.edu>
+Date:   Thu Oct 12 14:12:43 2017 -0400
+
+    test git access
+
+commit dd60481622a37c547467567cbbbe419436484d64
+Merge: e1197f2 820055f
+Author: am15am <am15am.my.fsu.edu>
+Date:   Thu Oct 12 13:59:57 2017 -0400
+
+    Merge branch 'titanic_float_none' of https://github.com/cvchakradharreddy/helloworld into titanic_float_none
+    Merging new branch
+
+commit e1197f20bda28f5e8baf283955ba388f0c0e3801
+Merge: a6e45a8 7aa86db
+Author: av15s <av15s.my.fsu.edu>
+Date:   Thu Oct 12 13:46:23 2017 -0400
+
+    deleted readme
+
+commit 820055fe09ef8031ce4de618ecee02e23180bb48
+Author: Venkata Chakradhar Reddy Challa <kickass@wg-dhcp201d198d071.secure.wireless.fsu.edu>
+Date:   Tue Oct 10 12:43:40 2017 -0400
+
+    new database ip network details
+
+commit 43f2d880f49cf09b6f81a07d33195a396e9576bd
+Merge: a6e45a8 7aa86db
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Fri Sep 15 02:02:55 2017 -0400
+
+    deleted readme
+
+commit 7aa86db01672c842408205d5fed9640207649001
+Author: cvchakradharreddy <cvchakradharreddy@gmail.com>
+Date:   Fri Sep 15 01:46:01 2017 -0400
+
+    Delete README.md
+
+commit a6e45a8e2312aa09c3185b0b2c22e75121b8bc87
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Fri Sep 15 01:17:23 2017 -0400
+
+    minor update
+
+commit 72b995ab505a6bc9f201c6928cf0480761c6f4b6
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sat Sep 9 20:03:57 2017 -0400
+
+    minor updates
+
+commit 10f797017afdeea43ba25d99eb30b6484d92c6a0
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sat Sep 9 19:59:39 2017 -0400
+
+    minor updates
+
+commit bf08644598fe97bc37788abbc5db5ae8e0335e1b
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sat Sep 9 19:58:29 2017 -0400
+
+    minor updates
+
+commit 183baf8003864f280044ff1b4159b2767e0d4046
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sat Sep 9 19:53:00 2017 -0400
+
+    minor updates to read me file
+
+commit c2bd1f6d0d794a640e858835ad2e61ed684fe7e4
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sat Sep 9 19:33:05 2017 -0400
+
+    initial code push
+
+commit 5b558c8a14c38e551f5c0b62c5858601bb028098
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sat Sep 9 18:45:01 2017 -0400
+
+    Initial code push
+    
+    Signed-off-by: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+
+commit aa8c305f32fd9b0f09e7110c742704a63f0a804a
+Author: cvchakradharreddy <cvchakradharreddy@gmail.com>
+Date:   Sat Sep 9 15:58:01 2017 -0400
+
+    Initial commit
