@@ -20,6 +20,13 @@ QUnit.test( "Description of tests", function(assert) {
             });  */
 
 
+/**************************
+Code reviewed by : Venkata Challa, 10/15/2017
+Comments: 
+1. Test cases are not meant to be written in actual application code (index.html/login.html), must be written in tests.js or test_index.html
+2. Test cases are not implemented properly and need code changes. Full test coverage is not done.
+****************************/
+
 QUnit.test( "Sign in available", function(assert) {
     var signinTxt = $("#tabbox #signin").html();
     var notEmpty = (signinTxt != "");
@@ -33,6 +40,11 @@ QUnit.test("Sign up available", function(assert){
     assert.ok(notEmpty,"Label is not empty");
     assert.equal("Sign Up ", signupTxt,"Label matched");
            });
+
+/*
+Incorrect implementation 
+*/
+
 QUnit.test("email signup",function(assert){
     var check_email=/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
     assert.ok(check_email.test("ashish25@yahoo.com")=== true,"Valid Email");
@@ -53,10 +65,19 @@ QUnit.test("Password",function(assert){
     assert.ok(check_pwd.test("Ashish!345")===false,"InValid Password");
            
 });
-Qunit.test("Signin", function(){
+
+/*
+Incomplete implementation 
+*/
+QUnit.test("Signin", function(){
    var s= $("#in_user_name").val("am15am");
     $("#in_user_pwd").val("am14am");
     $("#insign").onclick;
     
     
 });
+QUnit.test("Signin", function(assert){
+        $("#in_user_name").val("am15am");
+        $("#in_user_pwd").val("am14am");
+        $("#insign").onclick;
+        });
