@@ -20,6 +20,7 @@
        <!--- <link rel="stylesheet" href="jquery/theme-classic-1.4.0.css"/> -->
         <!-- required to set background transparent & enable "click through" -->
         <link rel="stylesheet" href="../../../www/jquery/jquery-mobile-transparent-ui-overlay.css" /> 
+        <link rel="stylesheet" href="../../../www/plugins/font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
         
 
         <!-- jquery JS files -->
@@ -65,10 +66,10 @@
 
                 <!-- popup displayed when button clicked -->
                 <div data-role="popup" id="popupPOIInfo" class="ui-content" data-theme="e" style="max-width:350px;">
+                    <p style="margin: 0px 0px 10px 0px;text-align:right;"><i id="postPOIinfo" onClick="arworld.postPOIinfo()" class="fa fa-thumb-tack fa-lg" aria-hidden="true" style="transform: rotate(45deg)"></i></p>
                     <form method="post" action="#">
-                        <input type="text" name="title" id="title" placeholder="Title..."/>
-                        <textarea name="desc" id="desc" placeholder="Description..." class="desc"></textarea>
-                        <p style="margin: 0px;text-align:right;"><a id="postPOIinfo" href="javascript:arworld.postPOIinfo();" class=" ui-alt-icon" data-inline="true" data-icon="alert" data-theme="e" data-iconpos="notext">Post</a></p>    
+                        <input type="text" name="title" id="title" placeholder="Label..."/>
+                        <textarea name="desc" id="desc" placeholder="Comments..." class="desc"></textarea>    
                     </form>
                 </div>
                 
