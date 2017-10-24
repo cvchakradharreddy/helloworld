@@ -1,3 +1,27 @@
+commit 210a9ef6206ed489b0fd6df6bcdcb6c06b663575
+Author: Venkata Chakradhar Reddy Challa <kickass@Venkatas-MacBook-Pro.local>
+Date:   Sun Oct 15 21:54:23 2017 -0400
+
+    Code review and refactoring, Minor fixes
+
+commit 176f30e645ccd26d31fbe99cdf14c692d72517d6
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sun Oct 15 19:57:37 2017 -0400
+
+    Added few more unittests
+
+commit 7c37629130492116858a337900f119ca9e09a59b
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sun Oct 15 19:56:10 2017 -0400
+
+    Added few more unittests
+
+commit 8469b11778c98de18fb7e5714f4813854e8dbcef
+Author: am15am <am15am@my.fsu.edu>
+Date:   Sun Oct 15 19:45:58 2017 -0400
+
+    Added new unittests
+
 commit 4e356394bf6067880f4d592132d119d7f6531098
 Author: av15s <av15s@my.fsu.edu>
 Date:   Sun Oct 15 15:20:30 2017 -0400
