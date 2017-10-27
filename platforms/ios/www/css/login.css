@@ -29,6 +29,25 @@ CSS for login page
     font-weight: 100;
    
 }
+
+.checkbox input {
+
+float: left;
+margin-top: 7px;
+margin-left: 5px;                                      
+color: #000;
+clear: both;
+}
+
+.checkbox span {
+ display: inline-block;   
+float: right;
+margin-top: -15px;
+margin-right: 130px;
+font-family: arial, sans-serif;
+}
+
+
 .tab{
     display:inline;
     width: 50%;
@@ -51,6 +70,15 @@ CSS for login page
     margin-left: 0px;
     color: #ffffff;
     
+}
+
+.checkbox
+{
+    display: inline-block;
+   float: right;
+    margin: 0px 7px;
+    width: 250px;
+    height: 27px;
 }
 
 
