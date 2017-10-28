@@ -113,23 +113,13 @@ var arworld = {
 	// request POI data
 	requestDataFromDatabase: function requestDataFromDatabseFn(centerPointLatitude, centerPointLongitude) {
 
-            databaseService.getAllDocuments(DB_MAIN)
-                .then(function(docs){
-                    for(var i=0; i<docs.total_rows; i++){
-                         databaseService.getDocument(DB_MAIN, docs.rows[i].id)
-                        .then(function(doc){
-                            var poiData = new POIData(doc._id, doc.title, doc.description, doc.location);
+            tagService.getAllTags()
+                .then(function(poiData){
                             arworld.loadPoisFromData(poiData);
                         })
                         .catch(function(err){
-                             console.log("Fetching doc id "+docs.rows[i].id+" failed with error: "+err);
+                             console.log("Fetching All tags from database failed with error: "+err);
                          });
-                    }
-
-                })
-                .catch(function(err){
-                    console.log("Fetching All documents from database "+DB_MAIN+" failed with error: "+err);
-                });
 
             /*for (var i = 0; i < poisToCreate; i++) {
                 poiData.push({
@@ -153,11 +143,10 @@ var arworld = {
         var desc = $("#desc").val();
         $( "#popupPOIInfo" ).popup( "close" );
         console.log("*** Posting POI information ***");
-        var doc = new Document(arworld.getCurrentLocation(), title, desc);
-        databaseService.createDocument(DB_MAIN, doc)
+        var tag = new Document(arworld.getCurrentLocation(), title, desc);
+        tagService.postTag(tag)
             .then(function(res) {
-                var newPOI = new POIData(res.id, title, desc, arworld.getCurrentLocation());
-               arworld.loadPoisFromData(newPOI);
+               arworld.loadPoisFromData(res);
             })
             .catch(function(err){
                 console.log(err);
