@@ -1,3 +1,8 @@
+/* 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Contains logic to create marker on AR world
+*/
+
 var kMarker_AnimationDuration_ChangeDrawable = 500;
 var kMarker_AnimationDuration_Resize = 1000;
 

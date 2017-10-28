@@ -1,3 +1,8 @@
+/* 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: End point that push/pull records to/from database
+*/ 
+
 var databaseService = (function (){
     
     var client;

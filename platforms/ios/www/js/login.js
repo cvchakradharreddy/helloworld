@@ -1,6 +1,7 @@
 /* 
-Login page controller
-*/
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Contains controller logic for login view
+*/ 
 
 var login = {
     toggleTab: function (tab) {

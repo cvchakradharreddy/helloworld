@@ -1,3 +1,7 @@
+/* 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Contains logic to launch application and to initiate AR world 
+*/ 
 
 var app = {
     isARWorldLoaded: false,

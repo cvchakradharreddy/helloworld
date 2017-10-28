@@ -1,3 +1,8 @@
+/* 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Contains controller logic for main AR world view
+*/ 
+
 // implementation of AR-Experience (aka "arworld")
 console.log("*** AR World Loaded ***");
 var arworld = {

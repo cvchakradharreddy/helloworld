@@ -1,6 +1,6 @@
 /* 
-Implemented by: Venkata Chakradhar Reddy Challa
-Description: tag service that map main view to database for pushing and pulling tag information 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Service to push/pull tag information to/from database
 */ 
 
 var tagService = (function (){

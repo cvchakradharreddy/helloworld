@@ -1,3 +1,8 @@
+/* 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Service that holds location information
+*/ 
+
 var locationService = (function (){
     var loc;
 

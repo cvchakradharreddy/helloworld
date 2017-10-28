@@ -1,5 +1,6 @@
 /* 
-Login service that map UI to database for Signup and Signin user 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Service to pull/push user login/registration information to/from database
 */ 
 
 var loginService = (function (){

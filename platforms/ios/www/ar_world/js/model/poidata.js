@@ -1,3 +1,8 @@
+/* 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Holds POI information 
+*/
+
 function POIData(id, title, desc, location) {
         this.id = id;
         this.title = title;

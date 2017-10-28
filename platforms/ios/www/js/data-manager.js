@@ -1,4 +1,9 @@
-//This file is not used, Instead using databaseService.js
+/* 
+Created & Implemented by: Venkata Chakradhar Reddy Challa
+Description: Initiates swagger client connection to database
+*/
+
+//This file is not used, Instead use databaseService.js
 
 function initRESTClient(url, db_name) {
   var client = new SwaggerClient({
