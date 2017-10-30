@@ -64,6 +64,10 @@ var login = {
                     });
             }                
                   
-    }         
+    },
+    
+    guestSignIn: function () {
+            app.initiateARWorld();
+    }
 }
 

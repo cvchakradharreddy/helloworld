@@ -247,3 +247,6 @@ input[type=email]
 	color: #fff;
 	font-size: 16px;
 }
+.guest_login{
+    color: #FFFF00;
+}
