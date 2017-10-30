@@ -75,8 +75,9 @@ QUnit.test("Password",function(assert){
 /*
 Incomplete implementation 
 */
+document.getElementById("in_user_name").value="am15am";
 QUnit.test("Signin", function(){
-   var s= $("#in_user_name").val("am15am");
+   document.getElementById("in_user_name").value="am15am";
     $("#in_user_pwd").val("am14am");
     $("#insign").onclick;
     

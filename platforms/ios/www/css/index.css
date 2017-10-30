@@ -26,23 +26,42 @@ body {
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:0px;
+    height:100%;
     margin:0px;
-    padding:90px;
+    padding:0px;
     text-transform:uppercase;
-    width:0%;
+    width:100%;
+    
+    background-color: #32383d;
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size: 12px;
     
 }
 
 .app {
     left: 46%;
     top: 0%;
-    height: 0px;
-    width: 267px;
+    /*height: 0px;
+    width: 267px;*/
     text-align: center;
-    padding: 180px 0px 0px 0px;
+    padding: 0px 180px 0px 0px;
     margin:auto;
+    align-items:stretch;
+    width: 100%;
+    height: auto;
+    margin: 5%;
+    margin-right:auto;
+    margin-left: auto;
+    background-color: #625777;
+   
 
+    box-sizing:content-box;
+    box-shadow: 0px 0px 12px #625777;
+
+}
+
+.form-gap{
+    padding-top: 70px;
 }
 
 input{

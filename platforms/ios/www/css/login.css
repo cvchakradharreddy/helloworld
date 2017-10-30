@@ -4,19 +4,7 @@ Implemented by: Akhila Vegesna
 Description: Contains CSS style for application login view
 */
 
-#container {
-    align-items:stretch;
-    width: 100%;
-    height: auto;
-    margin: 5%;
-    margin-right:auto;
-    margin-left: auto;
-    background-color: #625777;
-   
 
-    box-sizing:content-box;
-    box-shadow: 0px 0px 12px #625777;
-}
 .fa-check-circle{
     background-color:#625777;
     color: whitesmoke;
@@ -47,6 +35,10 @@ float: right;
 margin-top: -15px;
 margin-right: 130px;
 font-family: arial, sans-serif;
+}
+
+a{
+    font-family: arial, sans-serif;
 }
 
 
