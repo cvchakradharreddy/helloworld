@@ -66,6 +66,27 @@ var login = {
                   
     },
     
+    forgotPassword: function(){
+        $("#login_error_info").empty(); 
+        var userEmail = $("#up_user_email").val();
+        var userPwd = $("#up_user_pwd").val();
+        if(userEmail && userPwd){
+               loginService.forgotPassword(user)
+                        .then(function (res) {
+                                if(res){
+                                    if(res.email == user.email) {
+                                        console.log("User: "+user.email+" Is valid");
+                                        app.initiateARWorld();
+                                    }
+                                    else{
+                                        console.error("Please Enter a valid Email.");
+                                    }
+                                }
+                          })
+                              
+                        }
+    },
+    
     guestSignIn: function () {
             app.initiateARWorld();
     }
