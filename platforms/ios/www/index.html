@@ -78,12 +78,16 @@ US0004 - Functionality is not fully implemented
                                             </div>
     
                                             <br><br/>  <br><br/>
-                       
+                                        <div class="same">
                                         <input type="submit" id="insign"Value="continue" tabindex="3" />
-                                            <a href="forgotpassword.html"><p>Forgot Password</p></a>
-                                      <br><br><br><br><br>
+                                        </div>
+                                            <!--<a href="forgotpassword.html"><p>Forgot Password</p></a>-->
+                                            <p onclick="javascript:login.toggle('forgotPassword');">Forgot Password</p>
+                                            
+                                      <br><br><br><br><br>  <br>
                                         </form>
                                     </div>
+                       
 
                                  <div id="signupbox">
                                     <form name="form2" id="signupform" action="javascript:login.signUp();"> 
@@ -100,7 +104,9 @@ US0004 - Functionality is not fully implemented
                                     <span> <i class="fa fa-key" aria-hidden="true"></i></span>
                                         </div>
                                             <br /> <br/>
+                                        <div class="same">
                                     <input type="submit" Value="Sign Up"/>
+                                        </div>
                                         <br/>
                                         <br>
                                         <br>
@@ -111,6 +117,31 @@ US0004 - Functionality is not fully implemented
                     
                 </div>
             </div>
+            
+                                    <div id="fp">
+                                        <form name="form 3" id="forgotPasswordForm" action="javascript:login.forgotPassword()" method="post">
+                                               <br><br><br><br><br>
+                                                <h3><i class="fa fa-lock fa-4x"></i></h3>
+                                                      <h2 class="text-center"><p>Forgot Password?</p></h2>
+                                                      <p>You can reset your password here.</p>
+                                                      <div class="panel-body">
+
+                                                            <div class="username1">
+
+                                                              <input type="email" id="up_user_email" name="email" placeholder="Email Address" class="txtfield" required/>
+                                                              <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                                              <input type="password" name="password" id="up_user_pwd" 
+                                                              class="txtfield" placeholder="Password" required />
+
+                                                            </div>
+                                                            <div class="same">
+                                                            <input name="recover-submit" value="Reset Password" type="submit">
+                                                          </div>
+                                                               <br><br><br><br><br>   <br><br><br><br><br>    <br><br><br><br><br>
+
+                                                      </div>
+                                            </form>
+                                            </div>
             
 
            <!-- <p class="logo"></p> 

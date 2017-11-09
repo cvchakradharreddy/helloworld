@@ -2,6 +2,8 @@
 Created & Implemented by: Venkata Chakradhar Reddy Challa
 Description: Contains controller logic for login view
 */ 
+$("#fp").hide();
+
 
 var login = {
     toggleTab: function (tab) {
@@ -9,11 +11,24 @@ var login = {
             if(tab=="signIn"){
                 $("#signupbox").hide();
                 $("#signinbox").show();
+                $("#fp").hide();
                } else {
                 $("#signinbox").hide();
                 $("#signupbox").show();
                }
         },
+    toggle: function(tab1){
+        if(tab1=="signIn")
+            {
+                $("#login_page").show();
+                $("#fp").hide();
+            }
+        else{
+            $("#login_page").hide();
+            $("#fp").show();
+        }
+    },
+ 
 
     signIn: function () {
           $("#login_error_info").empty();
@@ -66,7 +81,8 @@ var login = {
                   
     },
     
-    forgotPassword: function(){
+
+   forgotPassword: function(){
         $("#login_error_info").empty(); 
         var userEmail = $("#up_user_email").val();
         var userPwd = $("#up_user_pwd").val();
@@ -75,7 +91,7 @@ var login = {
                         .then(function (res) {
                                 if(res){
                                     if(res.email == user.email) {
-                                        console.log("User: "+user.email+" Is valid");
+                                        console.log("Password Reset Successful");
                                         app.initiateARWorld();
                                     }
                                     else{
@@ -86,7 +102,7 @@ var login = {
                               
                         }
     },
-    
+
     guestSignIn: function () {
             app.initiateARWorld();
     }

@@ -167,6 +167,12 @@ input[type=email]
     width: 244px;
 }
 
+.same {
+            position: relative;
+            width: 90%;
+            margin: 15px auto;
+        }
+
 .username1 {
             position: relative;
             width: 90%;
