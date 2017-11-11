@@ -36,7 +36,7 @@ var login = {
             var userPwd = $("#in_user_pwd").val();
             var user = new User(userName, "", userPwd);
             if(userName && userPwd){
-               loginService.signInUser(user)
+               loginService.getUser(user)
                         .then(function (res) {
                                 if(res){
                                     if(res.password == user.password) {
@@ -84,25 +84,34 @@ var login = {
 
    forgotPassword: function(){
         $("#login_error_info").empty(); 
-       var userName = $("#fp_user_name").val();
+        var userName = $("#fp_user_name").val();
         var userEmail = $("#fp_user_email").val();
-        var userPwd = $("#fp_user_pwd").val();
-       var user = new User(userName, userEmail, userPwd);
-        if(userName && userEmail && userPwd){
-               loginService.forgotPassword(user)
+        var userNewPwd = $("#fp_user_pwd").val();
+        var user = new User(userName, userEmail, userNewPwd);
+        if(userName && userEmail && userNewPwd){
+               loginService.getUser(user)
                         .then(function (res) {
                                 if(res){
                                     if(res.email == user.email) {
-                                        console.log("Password Reset Successful");
-                                        app.initiateARWorld();
-                                    }
-                                    else{
+                                        loginService.updateUser(user)
+                                            .then(function (res) {
+                                                console.log("Password Reset Successful");
+                                                app.initiateARWorld();
+                                            })
+                                            .catch(function (err) {
+                                                
+                                            });
+                                        
+                                    } else {
                                         console.error("Please Enter a valid Email.");
                                     }
                                 }
                           })
+                          .catch(function (err) {
+                        
+                          });
                               
-                        }
+        }
     },
 
     guestSignIn: function () {

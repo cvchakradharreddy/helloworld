@@ -20,7 +20,7 @@ var loginService = (function (){
             });
             return promise;
         },
-        signInUser: function(/* object */ user) {
+        getUser: function(/* object */ user) {
              var promise = new Promise(function(resolve, reject){
                 databaseService.getDocument(login_db, user.username)
                     .then(function (res) {
@@ -32,14 +32,14 @@ var loginService = (function (){
             });
             return promise;
         },
-        forgotPassword: function(user){
+        updateUser: function(/* object */ user){
             var promise = new promise(function(resolve, reject){
-            databaseService.getDocument(login_db, user.email)
+            databaseService.updateDocument(login_db, user, user.username)
             .then(function (res){
-                        return resolve(res);
+                    return resolve(res);
              })
             .catch(function(err){
-                        return reject(err);
+                    return reject(err);
             });
         });
         return promise;     

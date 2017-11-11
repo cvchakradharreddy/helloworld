@@ -214,6 +214,27 @@ var databaseService = (function (){
                     });
             });
             return promise;
-        }
+        },
+        updateDocument: function(db_name, doc, doc_id) {
+            if(doc_id) {
+               doc["_id"] = doc_id;
+               }
+            var promise = new Promise(function(resolve, reject){
+                databaseService.getClient()
+                    .then(function(client){
+                      client.document.put({db: db_name, doc: doc_id, body: doc})
+                        .then(function (res) {
+                            return resolve(res.obj);
+                        })
+                        .catch(function (err) {
+                           return reject(err);
+                        });
+                    })
+                    .catch(function(err) {
+                        return reject(err);
+                    });
+            });
+            return promise;
+        },
     }
 })();
