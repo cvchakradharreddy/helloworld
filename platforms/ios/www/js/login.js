@@ -84,9 +84,11 @@ var login = {
 
    forgotPassword: function(){
         $("#login_error_info").empty(); 
-        var userEmail = $("#up_user_email").val();
-        var userPwd = $("#up_user_pwd").val();
-        if(userEmail && userPwd){
+       var userName = $("#fp_user_name").val();
+        var userEmail = $("#fp_user_email").val();
+        var userPwd = $("#fp_user_pwd").val();
+       var user = new User(userName, userEmail, userPwd);
+        if(userName && userEmail && userPwd){
                loginService.forgotPassword(user)
                         .then(function (res) {
                                 if(res){

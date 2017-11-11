@@ -31,7 +31,7 @@ var loginService = (function (){
                     });
             });
             return promise;
-        }
+        },
         forgotPassword: function(user){
             var promise = new promise(function(resolve, reject){
             databaseService.getDocument(login_db, user.email)
@@ -44,5 +44,6 @@ var loginService = (function (){
         });
         return promise;     
         },
+    }
         
 })();
