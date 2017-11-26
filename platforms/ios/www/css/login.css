@@ -102,7 +102,6 @@ a{
 
 p{
     font-family: arial;
-    font-size: 10px;
     color: #ffffff;
 }
 
@@ -110,6 +109,19 @@ p{
     background-color: transparent;
     padding-left: 25px;
     
+}
+
+#fp_user_name{
+    background-color: transparent;
+    padding-left: 25px; 
+}
+#fp_user_email{
+    background-color: transparent;
+    padding-left: 25px;
+}
+#fp_user_pwd{
+    background-color: transparent;
+    padding-left: 25px;
 }
 
 /*input[type=text]{
@@ -248,4 +260,13 @@ input[type=email]
 .guest_login{
     color: #FFFF00;
     font-size: 20px;
+}
+.small-label{
+    font-size:"15px" !important;
+}
+.remember-me{
+    margin-top: 8px;
+}
+#login_error_info{
+    color: #0000ff;
 }
