@@ -25,13 +25,14 @@ var arworld = {
 	currentMarker: null,
 
     loadMarkerDefaultAssets: function() {
+        console.log("***loadMarkerDefaultAssets****");
         // Start loading marker assets:
 		// Create an AR.ImageResource for the marker idle-image
-		arworld.markerDrawable_idle = new AR.ImageResource("assets/marker_idle.png");
+		arworld.markerDrawable_idle = new AR.ImageResource("../../assets/marker_idle.png");
 		// Create an AR.ImageResource for the marker selected-image
-		arworld.markerDrawable_selected = new AR.ImageResource("assets/marker_selected.png");
+		arworld.markerDrawable_selected = new AR.ImageResource("../../assets/marker_selected.png");
 		// Create an AR.ImageResource referencing the image that should be displayed for a direction indicator. 
-		arworld.markerDrawable_directionIndicator = new AR.ImageResource("assets/indi.png");
+		arworld.markerDrawable_directionIndicator = new AR.ImageResource("../../assets/indi.png");
     },
 	// called to inject new POI data
 	loadPoisFromData: function loadPoisFromDataFn(poiData) {
@@ -80,6 +81,7 @@ var arworld = {
 			The custom function arworld.onLocationChanged checks with the flag arworld.initiallyLoadedData if the function was already called. With the first call of arworld.onLocationChanged an object that contains geo information will be created which will be later used to create a marker using the arworld.loadPoisFromJsonData function.
 		*/
 		if (!arworld.requestedData) {
+            console.log("Request data from database");
             // empty list of visible markers
 		    arworld.markerList = [];
             arworld.loadMarkerDefaultAssets();
@@ -149,14 +151,18 @@ var arworld = {
         $( "#popupPOIInfo" ).popup( "close" );
         console.log("*** Posting POI information ***");
         var tag = new Document(arworld.getCurrentLocation(), title, desc);
-        tagService.postTag(tag)
+        if(window.user=="Guest"){
+            var newPOI = new POIData("1234", tag.title, tag.description, tag.location);
+            arworld.loadPoisFromData(newPOI);
+        } else {
+            tagService.postTag(tag)
             .then(function(res) {
                arworld.loadPoisFromData(res);
             })
             .catch(function(err){
                 console.log(err);
             });
-        
+        }
         //arworld.createCustomPOI(title, desc);
     },
     

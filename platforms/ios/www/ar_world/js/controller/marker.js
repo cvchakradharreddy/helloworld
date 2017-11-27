@@ -65,7 +65,7 @@ function Marker(poiData) {
     /*
         Create an AR.ImageDrawable using the AR.ImageResource for the direction indicator which was created in the arworld. Set options regarding the offset and anchor of the image so that it will be displayed correctly on the edge of the screen.
     */
-    this.directionIndicatorDrawable = new AR.ImageDrawable(arworld.markerDrawable_directionIndicator, 0.1, {
+    this.directionIndicatorDrawable = new AR.ImageDrawable(arworld.markerDrawable_directionIndicator, 0.5, {
         enabled: false,
         verticalAnchor: AR.CONST.VERTICAL_ANCHOR.TOP
     });

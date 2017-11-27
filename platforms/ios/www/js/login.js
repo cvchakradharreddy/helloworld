@@ -116,6 +116,7 @@ var login = {
 
     guestSignIn: function () {
             app.initiateARWorld();
+            window.user="Guest";
     }
 }
 
