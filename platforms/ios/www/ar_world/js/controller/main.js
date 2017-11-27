@@ -28,11 +28,11 @@ var arworld = {
         console.log("***loadMarkerDefaultAssets****");
         // Start loading marker assets:
 		// Create an AR.ImageResource for the marker idle-image
-		arworld.markerDrawable_idle = new AR.ImageResource("../../assets/marker_idle.png");
+		arworld.markerDrawable_idle = new AR.ImageResource("../assets/marker_idle.png");
 		// Create an AR.ImageResource for the marker selected-image
-		arworld.markerDrawable_selected = new AR.ImageResource("../../assets/marker_selected.png");
+		arworld.markerDrawable_selected = new AR.ImageResource("../assets/marker_selected.png");
 		// Create an AR.ImageResource referencing the image that should be displayed for a direction indicator. 
-		arworld.markerDrawable_directionIndicator = new AR.ImageResource("../../assets/indi.png");
+		arworld.markerDrawable_directionIndicator = new AR.ImageResource("../assets/indi.png");
     },
 	// called to inject new POI data
 	loadPoisFromData: function loadPoisFromDataFn(poiData) {
